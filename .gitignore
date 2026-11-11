@@ -1,0 +1,6 @@
+/native/target/
+/MHSB.exe
+/environments/*.env.gz
+/captures/
+/grooms/
+*.tmp

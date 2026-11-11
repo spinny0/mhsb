@@ -1,15 +1,23 @@
 # MHSB
 
-Native Windows hair simulation.
+Making Hair Sims Better.
 
-**[Download MHSB 0.2.1 for Windows x64](https://github.com/spinny0/mhsb/releases/download/v0.2.1/MHSB-0.2.1-Windows-x64.zip)**
+**[Download for Windows](https://github.com/spinny0/mhsb/releases/download/v0.2.1/MHSB-0.2.1-Windows-x64.zip)**
 
-Extract the ZIP, then run `MHSB.exe`. Keep the `environments` folder beside it. Rust, Node.js and a browser are not required.
+Extract the ZIP and run **MHSB.exe**. Keep the `environments` folder beside it.
 
-The download contains exactly nine runtime files: the executable and eight environment caches for the two bundled skies at their supported quality levels. Models, shaders, icons and hairstyle previews are already embedded in the executable. No browser edition, source tree, development tools, screenshots, old versions or sample grooms are included.
+Paint hair anywhere on the human model, change its length and curl, comb it into shape, and see how it moves in the wind.
 
-Paint hair on the human mesh with Grow, Erase, Length and Comb. Use G/E/L/C for brushes, [ / ] for brush size, Ctrl to erase temporarily, and See skin to edit underneath dense hair. The default FPS cap remains 60.
+## Build it
 
-Windows x64 with DirectX 12 or Vulkan graphics support is required. Hardware frame rate depends on the selected graphics, fiber and guide settings.
+You need Rust, the Windows C++ build tools and Windows SDK. From this folder, run:
 
-This repository distributes the Windows build. Use Releases to download the application; GitHub's source-code ZIP contains the repository documentation.
+```powershell
+.\Build.ps1
+```
+
+The script builds the app and downloads the sky files from the existing release. Run the resulting `MHSB.exe` in this folder. Use `-SkipSkies` if you already have the sky files or only want to build.
+
+The repository contains the native app source and the assets it needs to build. The included icons, model data and hairstyle thumbnails are used inside the app. Large sky files are kept in the release download. There is no browser version or old-version clutter here.
+
+Asset credits are in [NOTICE.txt](NOTICE.txt).

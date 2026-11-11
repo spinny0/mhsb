@@ -1,0 +1,30 @@
+[package]
+name = "mhsb"
+version = "0.2.1"
+edition = "2024"
+
+[dependencies]
+eframe = { version = "=0.33.0", default-features = false, features = ["default_fonts", "wgpu"] }
+bytemuck = { version = "1", features = ["derive"] }
+glam = { version = "0.30", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+wgpu = { version = "27", default-features = false, features = ["dx12", "vulkan", "wgsl"] }
+image = { version = "0.25", default-features = false, features = ["png", "hdr", "exr"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
+
+[dev-dependencies]
+naga = { version = "27", features = ["wgsl-in"] }
+
+
+
+[dependencies.half]
+version = "2"
+
+[dependencies.flate2]
+version = "1"
