@@ -1,0 +1,12 @@
+Third-party asset notice
+
+Human mesh: adapted from the MakeHuman Community base mesh, released under CC0 1.0. The embedded derivative includes a cropped bust, smooth normals, eyes, surface samples and collision data.
+Source: https://github.com/makehumancommunity/makehuman/blob/master/makehuman/data/3dobjs/base.obj
+License: https://creativecommons.org/publicdomain/zero/1.0/
+
+Bundled environments: Mud Road PureSky and Citrus Orchard Road PureSky by Poly Haven, distributed under CC0. Runtime sky caches are derived from the supplied HDR images.
+https://polyhaven.com/a/mud_road_puresky
+https://polyhaven.com/a/citrus_orchard_road_puresky
+https://polyhaven.com/license
+
+This notice describes third-party assets and does not grant a license to the MHSB executable itself.
